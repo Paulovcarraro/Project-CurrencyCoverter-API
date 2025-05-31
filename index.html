@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Conversor de Moedas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -13,6 +13,45 @@
     />
   </head>
   <body>
+    <main>
+      <h1>Conversor de Moedas</h1>
+      <form id="currency-form">
+        <div class="input-group">
+          <label for="">Valor</label>
+          <input type="number" id="amount" placeholder="Insira o valor" />
+        </div>
+
+        <!-- Seleção de moeda -->
+
+        <div class="input-group">
+          <label for="">De</label>
+          <select name="" id="daMoeda">
+            <option value="USD">Dolar(USD)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="BRL">Real(BRL)</option>
+          </select>
+        </div>
+
+        <!-- Conversão -->
+
+        <div class="input-group">
+          <label for="">Para</label>
+          <select name="" id="paraMoeda">
+            <option value="USD">Dolar(USD)</option>
+            <option value="EUR">Euro(EUR)</option>
+            <option value="BRL">Real(BRL)</option>
+          </select>
+        </div>
+
+        <!-- Botões -->
+
+        <button type="submit">Converter</button>
+        <button type="reset">Limpar</button>
+      </form>
+
+      <div id="conversao"></div>
+    </main>
+
     <script src="./JavaScript/main.js"></script>
   </body>
 </html>
